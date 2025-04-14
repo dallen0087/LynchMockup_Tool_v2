@@ -22,7 +22,7 @@ preview_colors = ["WHITE", "BLACK", "PINK"]
 
 # Recolor logic
 light_colors = ["WHITE", "PINK", "YELLOW"]
-dark_colors = ["BLACK", "NAVY BLUE", "MAROON", "GREEN", "BABY_BLUE"]
+dark_colors = ["BLACK", "NAVY BLUE", "MAROON", "GREEN", "BABY BLUE"]
 
 # Placement guide options
 guide_options = ["STANDARD", "LARGE", "NARROW", "LARGE_VERTICAL", "BREAST_POCKET"]
@@ -72,7 +72,7 @@ if uploaded_files:
             py = box_y0 + (box_h - new_h) // 2
             mock.paste(fill, (px, py), fill)
 
-            st.image(mock.convert("RGB"), caption=f"{color} Preview", use_column_width=True)
+            st.image(mock.convert("RGB"), caption=f"{color} Preview", use_container_width=True)
 
     if st.button("Generate Full Mockup ZIP"):
         output_zip = io.BytesIO()
